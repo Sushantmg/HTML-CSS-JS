@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>css properties</title>
+    <style>
+      .div {
+        background-color: aqua;
+        color: blue;
+        width: 200px;/*for content*/
+        height: 20px;/*for content*/
+        margin: 10px;
+        padding: 20px;
+        border: 10px solid black;
+        box-sizing: border-box;
+        /*I set width 200px,height 20px, padding 20px,border 10px 
+        which is actual space on an element*/
+        /*sabai element nai total 200px bhayo so with box sizing: border box, 
+        the width i set 200px becomes
+        total width of an element including content,padding and border*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 5px 10px 20px #444444;
+        opacity: 0.5;/*visibility*/
+      }
+      .span {
+        /*span is inline element jatti neccesary cha tetti width default lincha*/
+        color: red;
+        border-color: black;
+        border-width: 2px;
+        border-style: dotted;
+        background-color: #EEEEEE;/*color code*/
+        border-radius: 70px;/*rounds the corner of an element outer border edge*/
+        display: block; /*take up full width by defualt*/
+        /*display: inline;/*only take as much width neccesary and respects width/height*/
+        margin: 10px 20px 30px 40px;
+        /*top right bottom left*/
+        padding: 20px 20px 20px 20px;
+        /*top right bottom left*/
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 5px 20px 20px #999999;
+      }
+      .p {
+        background-color: aquamarine;
+        max-width: 200px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100px;/*like bold*/
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 0.2em;
+        user-select: all;/*when a user clicks within paragraph text
+        tesle sabai entire paragraph text select rather than euta euta
+        word or portion jun letter clicked garcham*/
+        cursor: zoom-in;
+        height: 200px;
+        overflow-x: auto;/*x horizontally and y vertically*/
+        overflow-y: auto;/*adds scroll bar and content will be inside
+        scroll bar appears only if content overflows*/
+        /*in hidden if content exceeds height it will cut off */
+      }
+      .p2{
+        font-size: 5em;
+        /*1em=fontsize, if it was 1em that equals 1*16=16px*/
+        /*default font size=16px 
+        so here 16*5=80px is there */ 
+        line-height: 1.4;
+      }
+      img{
+        width: 100px;
+        height: 80px;
+    }
+    .button{
+        padding: 20px;
+        background-color: #777777;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.5s;
+    }
+    .button:hover{
+        background-color: aqua;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="div"><strong>Hello lads</strong></div>
+    <span class="span">Hajimemaste</span>
+    <p class="p">
+      My name is Sushan which can be said in japanese as Sushan des and in
+      korean as Sushan eyeea and in hindi as mera naam Sushan.This is my car.<br> 
+      <img src="C:\Users\user\OneDrive\Pictures\car yellow.jpg"></br>
+    </p>
+    <p class="p2">mosi mos hahahahhaaha</p>
+    <button type="button" class="button">CLICK ME</button>
+  </body>
+</html>

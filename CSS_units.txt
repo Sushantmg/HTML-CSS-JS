@@ -1,0 +1,50 @@
+h1 {
+    font-size: 60px;
+  }
+  
+  p {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+
+Length is a number followed by a length unit, such as 10px, 2em, etc.
+m	:centimeters
+mm	:millimeters
+in	:inches (1in = 96px = 2.54cm)
+px *	:pixels (1px = 1/96th of 1in)
+pt	:points (1pt = 1/72 of 1in)
+pc	:picas (1pc = 12 pt)
+
+em	:Relative to the font-size of the element (2em means 2 times the size of the current font)	
+1em = 16px (default)
+otherwise we have to go with parent font-size
+
+ex	:Relative to the x-height of the current font (rarely used)	
+The "ex" unit is useful for typography-related sizing where you want measurements
+that scale proportionally with the font size, especially for vertical spacing adjustments.
+
+ch	:Relative to the width of the "0" (zero)
+the "ch" unit is a relative length measurement based on the width 
+of the "0" (zero) character in the current font
+
+rem	:Relative to font-size of the root element
+relative to parents font size 16 px
+
+vw	:Relative to 1% of the width of the viewport*	
+"vw" stands for "viewport width" and is a relative unit 
+that represents a percentage of the browser viewport's width
+1vw equals 1% of the viewport width
+e.g., on a 1000px wide screen, 1vw = 10px
+
+vh	:Relative to 1% of the height of the viewport*	
+vh" stands for "viewport height" and is a relative unit that 
+represents a percentage of the browser viewport's height.
+1vh equals 1% of the viewport height
+
+vmin	:Relative to 1% of viewport's* smaller dimension	
+
+vmax	:Relative to 1% of viewport's* larger dimension	
+
+%	:Relative to the parent element
+

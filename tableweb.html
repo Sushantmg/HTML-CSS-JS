@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table-Based WebPage</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Main Table for the entire page layout -->
+        <table border="1" width="100%" cellspacing="0" cellpadding="0">
+            <!-- Header Row -->
+            <tr>
+                <td colspan="2" bgcolor="#333333" height="100" align="center">
+                    <font color="white" size="5"><br>MY WEBSITE HEADER</br></font>
+                </td>
+            </tr>
+            
+            <!-- Navigation Bar Row -->
+            
+            <tr>
+                <td colspan="2" bgcolor="#666666" height="30">
+                    <table border="0" width="100%" cellspacing="0">
+                        <tr>
+                            <td width="20%" align="center"><font color="white"><b>Home</b></font></td>
+                            <td width="20%" align="center"><font color="white"><b>About</b></font></td>
+                            <td width="20%" align="center"><font color="white"><b>Services</b></font></td>
+                            <td width="20%" align="center"><font color="white"><b>Products</b></font></td>
+                            <td width="20%" align="center"><font color="white"><b>Contact</b></font></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- Content Row with Main Content and Sidebar -->
+            <tr>
+                <!-- Main Content Cell -->
+                <td width="75%" valign="top" bgcolor="#FFFFFF" height="400">
+                    <h2>Welcome to My Website</h2>
+                    <p>This is the main content area of the website. Here you can place your primary content, articles, or information.</p>
+                    <p>This layout is created entirely using HTML tables, which was a common practice in the early days of web development.</p>
+                    
+                    <!-- Nested table for content organization -->
+                    <table border="1" width="100%" cellspacing="0" cellpadding="5">
+                        <tr bgcolor="#EEEEEE">
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td width="30%">Table Layout</td>
+                            <td>Using tables for structuring web pages</td>
+                        </tr>
+                        <tr>
+                            <td>Nested Tables</td>
+                            <td>Tables within tables for complex layouts</td>
+                        </tr>
+                        <tr>
+                            <td>Cell Attributes</td>
+                            <td>Using attributes like colspan, rowspan, align, etc.</td>
+                        </tr>
+                    </table>
+                </td>
+                
+                <!-- Sidebar Cell -->
+                <td width="25%" valign="top" bgcolor="#EEEEEE">
+                    <h3>Sidebar</h3>
+                    <p>This is a sidebar area where you can place secondary information, links, or widgets.</p>
+                    <ul>
+                        <li>Latest News</li>
+                        <li>Popular Posts</li>
+                        <li>Categories</li>
+                        <li>Archives</li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <!-- Footer Row -->
+            <tr>
+                <td colspan="2" bgcolor="#333333" height="50" align="center">
+                    <font color="white">&copy; 2023 My Table-Based Website. All rights reserved.</font>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
