@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head><title>CSS UNITS</title></head>
+    <style>
+      .fifty-percent{
+        border: 2px solid black;
+        background-color: red;
+        width: 50%;
+      }
+      .one-hundred-pixels{
+        border: 2px solid black;
+        background-color: red;
+        width: 100px;
+      }
+      .parent{
+        border: 2px solid black;
+        width: 160px;
+      }
+      .fifty-vw{
+        width: 50vw;
+        border: 2px solid black;
+        background-color: red;
+      }
+      .twenty-five-vh{
+        height: 25vh;
+        border: 2px solid black;
+        background-color: red;
+      }
+      .one-rem{
+        font-size: 1rem;
+      }
+      .one-em{
+        font-size: 1em;
+      }
+      .parent2{
+        border: 2px solid black;
+        font-size: 50px;
+      }
+      .two-rem{
+        font-size: 2rem;
+      }
+      .two-em{
+        font-size: 2em;
+      }
+
+    </style>
     <body>
-        h1 {
-            font-size: 60px;
-          }
-          
-          p {
-            font-size: 25px;
-            line-height: 50px;
-          }
+      <div class="box fifty-percent">50%</div>
+      <div class="box one-hundred-pixels">100px</div>
+      <div class="box fifty-vw">50vw</div>
+      <div class="box twenty-five-vh">25vh</div>
+      <hr>
+      <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred-pixels">100px</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+        </div>
+        <hr>
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+        <hr>
+        <div class="parent2">
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+      </div>
     </body>
 </html>
