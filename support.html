@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABout</title>
+    <link rel="stylesheet" href="f_webpage.css">
+    <style>
+        *{
+	margin: 0;
+	padding: 0;
+}
+
+div.form-1{
+	width: 400px;
+	margin: 100px auto 0px auto;
+}
+h2{
+	text-align: center;
+	padding: 20px;
+	font-family: sans-serif;
+}
+div.support1{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+	color: #fff;
+}
+form#support_form{
+	margin: 40px;
+}
+label{
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: italic;
+}
+input#name{
+	width: 300px;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+	background-color: #fff;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#submit{
+	width: 200px;
+	padding: 7px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 600;
+	border: none;
+	border-radius: 3px;
+	background-color: rgba(250,100,0,0.8);
+	color:#fff;
+	cursor: pointer;
+	border:1px solid rgba(255,255,255,0.3);
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+}
+label,span,h2{
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#feed{
+	width: 300px;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+	background-color: #fff;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+    </style>
+</head>
+
+    <header>
+        <nav class="container1">
+            <div class="name" id="susg">SUSHAN TAMANG</div>
+            <ul class="menu">
+                <a href="f_webpage.html"><li>Home</li></a>
+                <a href="about.html"><li>About </li></a>
+                <a href="resume.html"><li>Resume</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="support.html"><li>Support</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-1">
+            <div class="support1">
+                <h2>Support Us</h2>
+                <form id="support_form"  method="post">
+                    <label>First Name: </label>
+                    <br>
+                    <input type="text" name="fname"  id="name" placeholder="Enter Your First Name">
+                    <br><br>
+    
+                  
+                    
+                    
+                    
+                    <label>Email: </label>
+                    <br>
+                    <input type="email" name="email"  id="name" placeholder="Enter Your Valid Email">
+                    <br><br>
+                    <label>Your Feedback:</label>
+                    <br>
+                    <input type="text" name="Textbox" placeholder="Your Feedback" id="feed">
+                   <br><br>
+                    <input type="Submit" value="Submit" name="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

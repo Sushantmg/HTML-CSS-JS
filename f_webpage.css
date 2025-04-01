@@ -1,5 +1,6 @@
+
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 
@@ -9,12 +10,13 @@ body, html {
 }
 
 nav {
+    display: flex;
     z-index: 999;
+    font-size: 1.5rem;
     top: 0;
     position: sticky;
-    overflow: hidden;
+    width: 100%; 
     height: 90px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
@@ -27,35 +29,68 @@ nav ul {
     display: flex;
     gap: 20px;
     padding: 0;
-}
-
-nav ul li a {
-    font-size: 1.2rem;
     list-style: none;
-    cursor: pointer;
 }
 
-/* Styling for main content */
+
+
+
+
+
 .container1 {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-
+@keyframes slideInLeft{
+    from{
+transform: translate(-300px);
+    }
+    to{
+transform: translate(0px);
+    }
+}
+.introText h1,#p1{
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+}
 .container2 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
     padding: 20px;
+    height: 100vh;
 }
+.menu a:hover{
+transition: 0.5s;
+background-color: rgb(181, 253, 181);
+border-radius: 50px;
 
-
+}#susg{
+    font-weight: bolder;
+    margin-left: 100px;
+}
+.menu a{
+   font-size: 1.3rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    color: black;
+    list-style-type: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.introPic{
+    
+    width: 100%;
+}
 .introText {
     flex: 70%;
     max-width: 500px;
+    margin-left: 100px;
 }
 
 .introText h1 {
@@ -63,7 +98,7 @@ nav ul li a {
 }
 
 .introText span {
-    color:rgb(127, 255, 127);;
+    color:rgb(127, 255, 127);
 }
 
 
@@ -120,22 +155,142 @@ footer {
     width: 100%;
 
 }
+.abouth{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 7, 0);
+    font-size: 2rem;
+    margin-top: 10vh;
+    margin-left: 100px;
+}
+.aboutp{
+    color: rgb(119, 118, 118);
+    margin-left: 100px;
+    margin-top: 5vh;
+    font-size: 1.3rem;
+}
+
+#morebtn  {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 2vh;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(116, 240, 116);
+    border-radius: 10px;
+    transition: 0.25s;
+    width: 15%;
+    text-align: center;
+}
+#morebtn:hover {
+    background-color: rgb(72, 161, 72);
+}
+
+.container3{
+    border-top: 1px solid rgb(212, 212, 212);
+    height: 80vh;
+}
+.container4{
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#imagelogo{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+#support_btn  {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(5, 5, 5);
+    border-radius: 50px;
+    transition: 0.025s;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#support_btn:hover {
+    background-color:rgb(121, 121, 121);
+}
+#contact_h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#contact_h2{
+    font-weight: lighter;
+    color: rgb(158, 154, 154);
+}
 
 @media screen and (max-width: 600px) { 
-    *{
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box; 
     }
+#susg{
+    display: none;
+}
     nav {
-        
-        font-size: 0.9rem;
+        display: flex; 
+        font-size: 1.5rem;
+        font-weight: bold;
         box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
         width: 100%;
         justify-content: center;
         align-items: center;
-        
-
+        gap: 30px;
     }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu a {
+        padding: 5px;
+        color: black;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        transition: 0.5s;
+        color: rgb(127, 255, 127);
+    }
+
     .container2 {
         position: relative;
         display: flex;
@@ -149,21 +304,22 @@ footer {
 
     .introPic {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 100px;
+        width:180%;
+        height: 150%;
         z-index: 1;
         overflow: hidden;
     }
+    
+    
 
     .introPic img {
-        width: 100%;
-        height: 80%;
+    
         object-fit: cover;
         filter: brightness(40%);
-        border-radius: 0px;
+        border-radius: 0;
     }
+    
 
     .introText {
         position: relative;
@@ -176,6 +332,7 @@ footer {
     .introText h1 {
         font-size: 4rem;
         margin: 10px 0;
+        color: rgb(113, 230, 113);
     }
 
     .introText p {
@@ -187,40 +344,88 @@ footer {
     }
 
     .buttons {
+        display: flex; /* FIXED: Added flexbox */
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
-        gap:40px;
-        
+        gap: 40px;
+        flex-wrap: wrap; /* Allows wrapping for small screens */
+    }
+
+    .introText #github,
+    .introText #linkedin {
+        display: inline-block;
+        margin: 10px 5px;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 50px;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
     }
 
     .introText #github {
-        display: inline-block;
-        margin: 10px 5px;
-        padding: 10px 15px;
-        text-decoration: none;
-        color: white;
         background-color: transparent;
         border: 1px solid rgb(127, 255, 127);
-        border-radius: 50px;
-        transition: 0.3s;
-        width: 50%;
-        text-align: center;
     }
-    .introText #linkedin  {
-        display: inline-block;
-        margin: 10px 5px;
-        padding: 10px 15px;
-        text-decoration: none;
-        color: white;
-        background-color: rgb(127, 255, 127);
-        border-radius: 50px;
-        transition: 0.5s;
-        width: 50%;
-        text-align: center;
-    }
-    
 
-    #github:hover {
+    .introText #github:hover {
         background-color: rgb(63, 172, 63);
     }
+
+    .introText #linkedin {
+        background-color: rgb(127, 255, 127);
+    }
+
+    .introText #linkedin:hover {
+        background-color: rgb(63, 172, 63);
+    }
+
+.container4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+#contact{
+margin-top: 10px;
+margin-bottom: 100px;
+}
+#contact_h1{
     
+    margin-bottom: 100px;
+}
+#contact_h2{
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+#imagelogo{
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: small;
+
+gap: 10px;
+}
+.logo{
+        width:20%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        
+}
+.logo h1{
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#feed_h1{
+    margin-top: 50px;
+}
 }

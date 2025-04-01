@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="f_webpage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .gallery{
+                display: flex;
+                width: 100vw;
+                height: 50vh;
+                gap:50px;   
+                margin-top: 40px;  
+            }
+                @media screen and (max-width: 600px){
+                   .gallery{
+                    display: flex;
+                  
+                 
+                 flex-direction: column;
+                  
+                }
+                
+            
+            .gallery img{
+                width: 550px;
+                height: 600px;
+                border-radius: 60%;
+                
+            }
+            
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="container1">
+                <div class="name" id="susg">SUSHAN TAMANG</div>
+                <ul class="menu">
+                    <a href="f_webpage.html"><li>Home</li></a>
+                    <a href="about.html"><li>About </li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="support.html"><li>Support</li></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="gallery">
+            <img src="fewa.jpeg"></img>
+            <img src="gces.jpeg"></img>
+            <img src="gbs.jpeg"></img>
+            <img src="nayagaun.jpeg"></img>
+            <img src="gbs2.jpeg"></img>
+        </div>
+    </body>
+</html>
