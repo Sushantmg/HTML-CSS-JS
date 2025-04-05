@@ -1,6 +1,6 @@
-/*document.getElementById("myh1").textContent ="Sushan"
-document.getElementById("myp").textContent ="This is my first time trying"*/
+const menuIcon = document.getElementById('menuIcon');
+const navLinks = document.getElementById('navLinks');
 
-let x=10
-x=15
-console.log(x)
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('hidden');
+});
