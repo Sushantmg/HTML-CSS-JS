@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar Without Tailwind</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="navbar desktop">
+    <h1 class="logo">SUSHAN</h1>
+    <div class="nav-links">
+      <a href="practice.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About Us</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div class="navbar mobile">
+    <h1 class="logo">SUSHAN</h1>
+    <img id="menuIcon" src="../images/menugg.png" alt="Menu" class="menu-icon">
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobileSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <button id="closeSidebar">&times;</button>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="home.html" class="sidebar-item">Home</a></li>
+      <li><a href="about.html" class="sidebar-item">About Us</a></li>
+      <li><a href="contact.html" class="sidebar-item">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="title">INTRODUCTION</h1>
+    <p class="description">
+      I am a 20-year-old software engineering student at Gandaki College of Engineering and Science, affiliated with Pokhara University. Originally from Khudi, Lamjung, I grew up in Pokhara, where I completed my SEE and +2 in science at Gandaki Boarding School. From a young age, I have been captivated by technology and innovation. I thrive on solving complex problems through code and have a deep passion for software development. My expertise lies in front-end technologies like HTML and CSS, and I am currently mastering the MERN stack at Skill Shikshya to build full-fledged web applications.
+      <br><br>
+      Academically, I have always been a dedicated and high-achieving student. I secured excellent grades in both SEE and +2, excelling in subjects like mathematics and computer science, which further fueled my passion for technology. My ability to grasp complex concepts and apply them practically has set me apart throughout my academic journey. At university, I actively participate in coding competitions, hackathons, and technical seminars to enhance my problem-solving and software development skills.
+    </p>
+    <a href="https://github.com/Sushantmg" target="_blank" class="cta-button">Github</a>
+    <a href="../html/contact.html" class="cta-button">Click me</a>
+  </div>
+
+
+</body>
+</html>
