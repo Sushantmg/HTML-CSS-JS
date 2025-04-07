@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>Tailwind Test</title>
+</head>
+<body class="relative min-h-screen bg-gray-100">
+
+  <!-- Top Navbar -->
+  <div class="flex justify-between bg-white shadow-md p-4 lg:flex hidden">
+    <h1 class="text-4xl font-bold text-gray-800">SUSHAN</h1>
+    <div class="flex items-center">
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+<a href="practice.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">Home</li></a>
+        <a href="about.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">About Us</li></a>
+        <a href="contact.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">Contact</li></a>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div class="flex justify-between items-center bg-white shadow-md p-4 lg:hidden">
+    <h1 class="text-3xl font-bold text-gray-800">SUSHAN</h1>
+    <img id="menuIcon" src="../images/menugg.png" alt="Menu" class="w-8 h-8 cursor-pointer hover:scale-110 transition" />
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobileSidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg p-6 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-800">Menu</h2>
+      <button id="closeSidebar" class="text-xl font-bold">&times;</button>
+    </div>
+    <ul class="space-y-4 text-gray-700 font-medium">
+      <a href="practice.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">Home</li></a>
+      <a href="about.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">About Us</li></a>
+      <a href="contact.html"><li class="hover:text-blue-600 cursor-pointer transition duration-300">Contact</li></a>
+    </ul>
+  </div>
+
+  <!-- Overlay (optional) -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 lg:hidden"></div>
+
+
+<!-- End of Navbar -->
+
+
+<!-- Start of Body -->
+<div class="flex items-center justify-center flex-col h-screen">
+  <h1 class="text-5xl font-bold text-blue-600 mt-5 sm:text-2xl">
+ INTRODUCTION
+  </h1>
+<p class=" lg:px-2 lg:text-2xl font-medium text-gray-400 mt-5 sm:text-lg sm:px-6">
+    I am a 20-year-old software engineering student at Gandaki College of Engineering and Science, 
+    affiliated with Pokhara University. Originally from Khudi, Lamjung, I grew up in Pokhara,
+     where I completed my SEE and +2 in science at Gandaki Boarding School.From a young age,
+      I have been captivated by technology and innovation. I thrive on solving complex problems
+     through code and have a deep passion for software development. My expertise lies in front-end 
+     technologies like HTML and CSS, and I am currently mastering the MERN stack at Skill Shikshya 
+     to build full-fledged web applications.
+     <br>
+     <br>
+     Academically, I have always been a dedicated and high-achieving student.
+            I secured excellent grades in both SEE and +2, excelling in subjects like mathematics and computer science, 
+            which further fueled my passion for technology. My ability to grasp complex concepts and apply them
+             practically has set me apart throughout my academic journey. At university, I actively participate in
+              coding competitions, hackathons, and technical seminars to enhance my problem-solving and software 
+              development skills.
+</p>
+<a target="_blank"  href="https://github.com/Sushantmg" class=" text-white inline-block bg-blue-600 mt-5 px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg font-medium">Github</a>
+<a href="../html/contact.html" class="inline-block bg-blue-600 mt-5 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-md hover:shadow-lg font-medium">
+  Click me
+</a>
+
+</div>
+
+
+
+  
+  <script src="../javascript/practice.js"></script>
+</body>
+
+</html>
