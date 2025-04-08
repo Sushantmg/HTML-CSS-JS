@@ -15,6 +15,6 @@ if(email.value.length <5){
 
     if (messages.length > 0) {
         event.preventDefault();
-        errorElement.innerText = messages.join(', ');
+        errorElement.innerText = messages.join(', , ');
     }
 });
