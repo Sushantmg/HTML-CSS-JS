@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        body {
+            transition: background-color 0.3s ease;
+        }
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ebe6e6;
+            
+        }
+        .show {
+            display: block;
+        }
+        .table{
+            border: 2px solid white;
+            background-color: rgb(117, 82, 82);
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click ME</button>
+    <div class="hidden-text">🎉 You found the hidden message!
+        wassup homie ! haha I've been great all these times.
+        <table class="table" border="2">
+            <tr>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>123456</td>
+                <td>25</td>
+                <td>Male</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const button = document.querySelector('.button')
+        const hiddenText = document.querySelector('.hidden-text')
+        let isDark = false
+
+        button.addEventListener('click', () => {
+            document.body.style.backgroundColor = isDark ? 'white' : '#222'
+            document.body.style.color = isDark ? 'black' : 'white'
+            isDark = !isDark
+            hiddenText.classList.toggle('show')
+
+            button.textContent = isDark ? 'Switch Back' : 'Click ME'
+        });
+    </script>
+</body>
+</html>
+
