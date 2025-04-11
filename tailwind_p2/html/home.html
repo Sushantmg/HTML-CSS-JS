@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar Without Tailwind</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+  <!-- Desktop Navbar -->
+  <div class="navbar">
+    <h1>SUSHAN</h1>
+    <div class="nav-links">
+      <a href="../html/home.html">Home</a>
+      <a href="../html/about.html">About Us</a>
+      <a href="../html/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div class="mobile-navbar">
+    <h1>SUSHAN</h1>
+    <img id="menuIcon" src="../images/menugg.png" alt="Menu" class="menu-icon">
+  </div>
+
+  <!-- Sidebar -->
+  <div id="mobileSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Menu</h2>
+      <span id="closeSidebar" class="close-btn">&times;</span>
+    </div>
+    <ul>
+      <a href="../html/home.html">Home</a>
+      <a href="../html/about.html">About Us</a>
+      <a href="../html/contact.html">Contact</a>
+    </ul>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>SUSHAN TAMANG</h1>
+    <p>SUSHAN is a passionate web developer with a strong foundation in HTML, CSS, and JavaScript.</p>
+    <a href="../html/contact.html">Click me</a>
+  </div>
+
+<script src="../javascript/home.js"></script>
+</body>
+</html>
