@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar Without Tailwind</title>
-    <link rel="stylesheet" href="contact.css".css>
+    <link rel="stylesheet" href="../styles/contact.css".css>
 </head>
 <body>
 
-  <!-- Top Navbar (Desktop) -->
-  <div class="navbar desktop">
-    <h1 class="logo">SUSHAN</h1>
+  <div class="navbar">
+    <h1>SUSHAN</h1>
     <div class="nav-links">
-      <a href="home.css".html" class="nav-item">Home</a>
-      <a href="about.html" class="nav-item">About Us</a>
-      <a href="contact.html" class="nav-item">Contact</a>
+      <a href="../html/home.html">Home</a>
+      <a href="../html/about.html">About Us</a>
+      <a href="../html/contact.html">Contact</a>
     </div>
   </div>
 
-  <!-- Mobile Navbar -->
-  <div class="navbar mobile">
-    <h1 class="logo">SUSHAN</h1>
+  <div class="mobile-navbar">
+    <h1>SUSHAN</h1>
     <img id="menuIcon" src="../images/menugg.png" alt="Menu" class="menu-icon">
   </div>
 
-  <!-- Mobile Sidebar -->
+
   <div id="mobileSidebar" class="sidebar">
     <div class="sidebar-header">
       <h2>Menu</h2>
-      <button id="closeSidebar">&times;</button>
+      <span id="closeSidebar" class="close-btn">&times;</span>
     </div>
-    <ul class="sidebar-links">
-      <li><a href="practice.html" class="sidebar-item">Home</a></li>
-      <li><a href="about.html" class="sidebar-item">About Us</a></li>
-      <li><a href="contact.html" class="sidebar-item">Contact</a></li>
+    <ul>
+      <a href="../html/home.html">Home</a>
+      <a href="../html/about.html">About Us</a>
+      <a href="../html/contact.html">Contact</a>
     </ul>
   </div>
 
-  <!-- Overlay -->
+
   <div id="overlay" class="overlay"></div>
 
-  <!-- Start of Body -->
+
   <div class="form-container">
     <form method="post">
       <label for="fname">First Name:</label>
@@ -56,6 +54,6 @@
     </form>
   </div>
 
-  <script src="../javascript/practice.js"></script>
+  <script src="../javascript/home.js"></script>
 </body>
 </html>
