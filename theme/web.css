@@ -1,17 +1,31 @@
-:root{
-    --primary-color: #87e8de;
-    --secondary-color: #52c41a;
-    --text-color: #fff;
-    --background-color: #597ef7;
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
 
+}
+:root{
+    --primary-color: #13c2c2;
+    --secondary-color: #002329;
+    --text-color: #69b1ff;
+    --background-color: #597ef7;
+    --border-radius: 10px;
+    --border-color: #24292e;
+    --border-color-hover: #24292e;
+}
+#susg{
+    font-size: large;
+    font-weight: bolder;
 }
 .container{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--background-color);
+
 }
 .menu{
     display: flex;
@@ -19,27 +33,66 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 100px;
+    text-decoration: none;
+    gap:100px
+    
+    
+    
 }
 .menu-item{
+
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
     margin: 10px;
     padding: 10px;
-    background-color: var(--primary-color);
+    
     color: var(--text-color);
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: var(--border-radius)
 
     
 }
 .menu-item:hover{
     background-color: var(--secondary-color);
 }
-.menu-item:active{
-    background-color: var(--primary-color);
+
+.Intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
 }
-.menu-item:visited{
-    background-color: var(--primary-color);
+.Info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding-left: 90px;
+    padding-right: 90px;
 }
-.menu-item:link{
-    background-color: var
+#img{
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+   padding-left: 5rem;
+   margin-top: 10rem;
+   margin-bottom: 5rem;
+}
+#img2{
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+   padding-left: 5rem;
+   margin-top: 10rem;
+   margin-bottom: 5rem;
+}
+.assets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
