@@ -8,9 +8,10 @@ async function fetchData() {
         }
         let data = await rawData.json()
         const dataforDiv =data.map((item) =>{
+            console.log(item)
             return `<div class="card">
             <div class="id">${item.id} </div>
-            <div  class="ui">${item.userid}</div>
+            <div  class="ui">${item.userId}</div>
             <div  class="pdid"> ${item.products.id}</div>
             
             <div  class="pdtitle"> ${item.products.title}</div>
