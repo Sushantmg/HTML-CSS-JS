@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Submit</title>
+  <style>
+    .form-section {
+      max-width: 300px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="url"],
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+    }
+    #error-div {
+      color: red;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="form-section">
+    
+    <div>
+      <label for="Title">Title
+        <input id="Title" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="price">price
+        <input id="price" type="number">
+      </label>
+    </div>
+    <div>
+      <label for="description">description
+        <input id="description" type="text">
+      </label>
+    </div>
+    
+    <div>
+      <label for="category">category
+        <input id="category" type="text">
+      </label>
+    </div>
+    
+    <div>
+      <label for="image">image
+        <input id="image" type="url">
+      </label>
+    </div>
+
+
+    
+    <span id="error-div"></span>
+    <input onclick="formsubmit()" type="submit" value="Submit">
+  </section>
+
+  <script>
+    
+    const Title = document.getElementById("Title");
+    const price = document.getElementById("price");
+    const description = document.getElementById("description");
+    const category = document.getElementById("category");
+    const image = document.getElementById("image");
+
+    async function formsubmit() {
+      
+      const Titleval = Title.value.trim();
+      const priceval = price.value.trim();
+      const descriptionval = description.value.trim();
+      const categoryval = category.value.trim();
+      const imageval = image.value.trim();
+
+      if ( !Titleval || !price || !description || !category || !image) {
+        setError("Please fill in all fields.");
+        return;
+      }
+
+      const payload = {
+        id: 0,
+        Title: Titleval,
+        price: priceval,
+        description: descriptionval,
+        category: categoryval,
+        image: imageval,
+      };
+console.log(payload)
+      try {
+        const res = await fetch('https://fakestoreapi.com/products', {
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        });
+
+        if (!res.ok) {
+          throw new Error("Failed to post data");
+        }
+
+        const data = await res.json();
+        alert("Data has been added! New ID: " + data.id);
+        console.log(data);
+        setError(""); // Clear any previous errors
+      } catch (err) {
+        alert(err);
+        console.error(err);
+        setError("Something went wrong while submitting the form.");
+      }
+    }
+
+    function setError(errorMessage) {
+      document.getElementById("error-div").innerText = errorMessage;
+    }
+  </script>
+</body>
+</html>
