@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Image
+                </th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+let tableBody =document.getElementById("table_body")
+async function fetchUsers() {
+    try {
+        let rawData = await fetch('https://fakestoreapi.com/products')
+    
+        if (!rawData.ok) {
+          throw new Error("Failed to post data");
+        }
+
+        const data = await rawData.json();
+        const tableData = data.map((item) =>{
+            return `<tr>
+                <td>${item.title}</td>
+                <td>${item.price}</td>
+                <td>${item.description}</td>
+                <td>${item.category}</td>
+                <td>${item.image}</td>
+                <td>
+                    <button onclick="deleterUser(${item.id})">Delete</button>
+                </td>
+                </tr>`
+                
+        })
+        tableBody.innerHTML =tableData.join("")
+    
+      } catch (err) {
+        
+        console.log(error);
+    }
+    }
+    async function deleterUser(id) {
+        try{
+            let rawData =await fetch("https://fakestoreapi.com/products" + id, { method: "DELETE"})
+        
+            if (!rawData.ok){
+                throw new Error("Fetch Failed")
+            }
+            let data =await rawData.json()
+            console.log(data)
+        }catch (error){
+            console.log(error)
+        }
+    }
+    fetchUsers()
+    </script>
+</body>
+</html>
