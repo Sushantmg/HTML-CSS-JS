@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Owl Carousel - Local Files</title>
+
+  <!-- Local Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  
+  <!-- Custom Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    .owl-carousel .item {
+      background: #4DC7A0;
+      padding: 40px 0;
+      margin: 10px;
+      color: #fff;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Owl Carousel (Local Setup)</h2>
+
+  <div class="owl-carousel">
+    <div class="item">Slide 1</div>
+    <div class="item">Slide 2</div>
+    <div class="item">Slide 3</div>
+    <div class="item">Slide 4</div>
+    <div class="item">Slide 5</div>
+  </div>
+
+
+
+
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+  <!-- Initialize Carousel -->
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: true,
+        responsive: {
+          0:    { items: 1 },
+          600:  { items: 2 },
+          1000: { items: 3 }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
